@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Sino Dourado</title>
+    <link href="main.css" rel="stylesheet" type="text/css" />
+    <script src="scripts.js" defer></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+      defer
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+      defer
+    ></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="topo">
+        <div class="blocoazul">
+          <h1> Sino Dourado </h1>
+        </div>
+        <nav class="barra">
+          <div class="logo">
+            <a href="#"><img src="logo.png" alt="logo" onclick="playSound()"/></a>
+          </div>
+          <a style="margin-left: 150px" href="#bovina" class="botao">Bovina</a>
+          <a href="#suina" class="botao">Suína</a>
+          <a href="#exotica" class="botao">Exótica</a>
+          <a href="#mar" class="botao">Do Mar</a>
+          <a href="#duvidasfrq" class="botao">Dúvidas</a>
+          <a href="#local" class="botao">Localização</a>
+		  <a href="#cortes" class="botao" onclick="exibir_cortes()">Tipos de Cortes</a>
+		  <div class="pesquise">
+            <input type="text" placeholder="Pesquise" />
+            <ion-icon name="search-outline"></ion-icon>
+          </div>
+        </nav>
+      </header>
+    </div>
+
+    <div class="slider">
+      <div class="slides">
+        <input type="radio" name="radio-btn" id="radio1" />
+        <input type="radio" name="radio-btn" id="radio2" />
+        <input type="radio" name="radio-btn" id="radio3" />
+
+        <div class="slide first">
+          <img
+            src="carrossel1.png" alt="Imagem 1"
+          />
+        </div>
+
+        <div class="slide">
+          <img src="carrossel2.png" alt="Imagem 2" />
+        </div>
+
+        <div class="slide">
+          <img src="carrossel3.png" alt="Imagem 3" />
+        </div>
+      </div>
+
+      <div class="manual-navigation">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+      </div>
+    </div>
+
+    <div class="menu">
+      <div class="carne" id="bovina">
+        <div class="card-txt">
+          <img src="arabesco.png" />
+          <h1>Picanha Wagyu</h1>
+          <P>A Picanha Wagyu é muito apreciada por seu sabor único. Uma iguaria para os apreciadores de carnes nobres, graças à capa de gordura e alto nível de marmoreio e maciez</P>
+          <a href="" class="botao-card">Adicionar</a>
+        </div>
+        <div class="card-img">
+          <img src="wagyu.jpg" />
+        </div>
+      </div>
+      <div class="carne" id="suina">
+        <div class="card-img">
+          <img src="costela1.jpg" />
+        </div>
+        <div class="card-txt">
+          <img src="arabesco.png" />
+          <h1>Costela Suína</h1>
+          <P>Costelinha de porco, a spare ribs é um corte obitido da porção lombar do suíno. É um corte grande, começa no peito e vai até a parte mais traseira do porco.</P>
+          <a href="" class="botao-card">Adicionar</a>
+        </div>
+      </div>
+      <div class="carne" id="exotica">
+        <div class="card-txt">
+          <img src="arabesco.png" />
+          <h1>Carne de coelho</h1>
+          <P>A carne de coelho é considerada mais magra e mais saudável quando comparada às carnes bovina, ovina e suína. Além disso, é altamente digerível, saborosa, baixa em calorias, gorduras e colesterol.</P>
+          <a href="" class="botao-card">Adicionar</a>
+        </div>
+        <div class="card-img">
+          <img src="https://www.hipersuper.pt/wp-content/uploads/2021/09/carne-de-coelho.jpg" />
+        </div>
+      </div>
+      <div class="carne" id="mar">
+        <div class="card-img">
+          <img src="https://www.petz.com.br/blog/wp-content/uploads/2021/05/cachorro-pode-comer-salmao3.jpg" />
+        </div>
+        <div class="card-txt">
+          <img src="arabesco.png" />
+          <h1>Salmão</h1>
+          <P>Um dos peixes mais requisitados em composições gastronômicas e pratos sofisticados, o salmão é, além de muito saboroso, muito leve para a nossa alimentação saudável. Por ser frequentemente recomendado por médicos-pelo seu alto valor nutricional.</P>
+          <a href="" class="botao-card">Adicionar</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="duvidas" id="duvidasfrq">
+      <h1>Dúvidas frequentes</h1>
+      <section>
+        <div class="duvida-div">
+          <h2 id="titulo1">Quando chega novos produtos?</h2>
+          <div class="duvida">
+            Todas as quintas-feiras chegam novos produtos.
+          </div>
+        </div>
+        <div class="duvida-div">
+          <h2 id="titulo2">Vocês entregam em casa?</h2>
+          <div class="duvida2">
+            Nas compras acima de R$50,00 sua encomenda é entregue sem custos adicionais, dentro da região metropolitana do Rio de Janeiro.
+          </div>
+        </div>
+        <div class="duvida-div">
+          <h2 id="titulo3">Vocês entregam aos finais de semana?</h2>
+          <div class="duvida3">
+            Não, nossas entregas ocorrem de segunda a sexta.
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="form" id="local">
+      <div class="form-box">
+        <div class="form-value">
+          <form action="">
+            <div class="inputbox">
+              <input class="campo" type="text" required />
+              <label for="name">Nome</label>
+            </div>
+            <div class="inputbox">
+              <input class="campo" type="email" required />
+              <label for="email">Email</label>
+            </div>
+            <div class="inputbox">
+              <input class="campo" type="tel" required />
+              <label for="telefone">Telefone</label>
+            </div>
+            <div class="inputboxRadio">
+              <label for="sexo">Sexo:</label>
+              <input type="radio" name="sexo" id="feminino" value="feminino"> Feminino
+              <input type="radio" name="sexo" id="masculino" value="masculino"> Masculino
+              <input type="radio" name="sexo" id="naoInformar" value="naoInformar"> Não informar
+            </div>
+            <div class="inputboxSelect">
+              <label for="carnePreferida">Carne Preferida:</label>
+              <select name="carnePreferida" id="carnePreferida">
+                  <option value="bovina">Bovina</option>
+                  <option value="aves">Aves</option>
+                  <option value="suina">Suína</option>
+                  <option value="exoticas">Exóticas</option>
+              </select>
+            </div>
+            <div class="inputboxCheck">
+              <label for="formaEnvio">Deseja receber informações por:</label>
+              <br>
+              <input type="checkbox" name="formaEnvio" id="todos" value="todos"> Todos os meios
+              <br>
+              <input type="checkbox" name="formaEnvio" id="sms" value="sms"> SMS
+              <br>
+              <input type="checkbox" name="formaEnvio" id="e-mail" value="e-mail"> E-mail
+              <br>
+              <input type="checkbox" name="formaEnvio" id="ligacao" value="ligacao"> Ligação
+            </div>
+            <button>Cadastrar</button>
+          </form>
+        </div>
+      </div>
+      <img src="barbudo (1).png" alt="imagem 4"/>
+    </div>
+    <div class="rodape">
+      <div class="qsomos">
+        <h1>Quem Somos</h1>
+        <p class="texto">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+          semper suscipit purus viverra vestibulum. Phasellus viverra non magna
+          ut porta. Donec tincidunt tempus est. Nunc semper nisl libero, at
+          efficitur orci
+        </p>
+      </div>
+      
+      <div class="contatos">
+        <h1>Contatos</h1>
+        <p style="padding-top: 10px">(21) 00000-0000</p>
+        <p>Email:contato@gmail.com</p>
+      </div>
+      
+      <div class="redesocial">
+        <h1>Nossas Redes</h1>
+        <p>@teste</p>
+        <p>@teste</p>
+        
+        
+      </div>
+
+      <div class="local" id="local">
+        <h2>Localização</h2>
+        <br />
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2597.831740567396!2d-43.19454614082697!3d-22.954319119027907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997fe09f122171%3A0xcb6578915f0cf2be!2sR.%20Volunt%C3%A1rios%20da%20P%C3%A1tria%2C%20340%20-%20f%20-%20Botafogo%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2022270-016!5e0!3m2!1spt-BR!2sbr!4v1680138029464!5m2!1spt-BR!2sbr"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+
+    <div class="creditos">
+      <p>Desenvolvido por Rayssa Cabral</p>
+    </div>
+  </body>
+</html>

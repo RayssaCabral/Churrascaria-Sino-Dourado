@@ -1,0 +1,493 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,100&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  border: 2px;
+  background-color: #1d2f44;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-size: 100% 100%;
+  background-repeat: repeat;
+}
+
+.container {
+  display: flex;
+  background-size: cover;
+  width: 100vw;
+  height: 100%;
+  flex-direction: column;
+}
+
+.topo {
+  width: 100vw;
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.blocoazul {
+  width: 100%;
+  height: 100px;
+  background-color: #2c3e50;
+}
+.blocoazul h1{
+  font-family:  "Raleway", sans-serif;
+  display: flex;
+  color: #aa8443;
+  position: relative;
+  left: 260px;
+  margin-top: 45px;
+}
+
+.logo {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  left: -1px;
+  z-index: 1;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.pesquise {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  left: 70px;
+  margin-right: 30px;
+}
+
+.pesquise input {
+  background-color: transparent;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  border: 3px solid white;
+}
+
+.pesquise input::placeholder {
+  color: white;
+}
+
+.pesquise ion-icon {
+  height: 30px;
+  width: 30px;
+  position: relative;
+  left: -38px;
+  bottom: -5px;
+  color: white;
+}
+
+.barra:not(.pesquise),
+.barra:not(.logo) {
+  width: 100vw;
+  height: 65px;
+  background-color: #aa8443;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  box-shadow: 3px 3px 5px black;
+}
+
+.botao {
+  text-decoration: none;
+  color: white;
+  justify-content: space-between;
+  padding: 13px 30px;
+}
+
+.botao:hover {
+  color: #2c3e50;
+  transition: 0.5s;
+}
+
+.slider {
+  margin: 0 auto;
+  width: 1700px;
+  height: 40vh;
+  overflow: hidden;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: 10px 5px 25px #000;
+  border-radius: 10px;
+  max-width: 100%;
+}
+
+.slides {
+  width: 400%;
+  height: 30vh;
+  display: flex;
+}
+
+.slide {
+  width: 25%;
+  position: relative;
+  transition: 2s;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide img {
+  width: 1700px;
+  height: 40vh;
+}
+
+.manual-navigation {
+  position: relative;
+  width: 100%;
+  margin-top: 44px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn {
+  border: 2px solid white;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+.manual-btn:not(:last-child) {
+  margin-right: 40px;
+}
+
+.manual-btn:hover {
+  background-color: white;
+}
+
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+  margin-left: -25%;
+}
+
+#radio3:checked ~ .first {
+  margin-left: -50%;
+}
+
+.menu {
+  width: 65vw;
+  height: 140vh;
+  flex-direction: column;
+  display: flex;
+  border-radius: 10px;
+  background-color: #000;
+  margin-top: 40px;
+  box-shadow: 1px 10px 20px #000;
+}
+
+.carne {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  border-radius: 10px;
+}
+
+.card-txt {
+  background-color: #2c3e50;
+  width: 50%;
+  height: 100%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-family:  "Raleway", sans-serif;
+  color: #fff;
+}
+
+.card-txt p {
+  color: #fff;
+  padding: 20px;
+}
+.card-txt img {
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: -10px;
+
+
+}
+
+.botao-card {
+  width: 90px;
+  height: 30px;
+  text-decoration: none;
+  color: white;
+  background-color: #aa8443;
+  border-radius: 20px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+ 
+}
+
+
+.card-img {
+  background-color: white;
+  width: 50%;
+  height: 100%;
+  border-radius: 10px;
+  display: flex;
+}
+
+.card-img img{
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+
+}
+
+.duvidas {
+  background-color: #2c3e50;
+  width: 100%;
+  height: 25vh;
+  display: flex;
+  font-family: "Raleway", sans-serif;
+  margin-top: 40px;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+
+.duvidas h1 {
+  margin: 20px 0;
+  color: white;
+}
+
+.duvidas section {
+  margin-top: 5px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.duvidas section h2 {
+  position: relative;
+  background: #1d2f44;
+  padding: 10px 10px;
+  color: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+  width: fit-content;
+  height: fit-content;
+}
+
+.duvidas section h2#titulo1:hover ~ .duvida {
+  transform: translateY(0) scaleY(1);
+}
+
+.duvidas section h2#titulo2:hover ~ .duvida2 {
+  transform: translateY(0) scaleY(1);
+}
+
+.duvidas section h2#titulo3:hover ~ .duvida3 {
+  transform: translateY(0) scaleY(1);
+}
+
+.duvidas section h2#titulo4:hover ~ .duvida4 {
+  transform: translateY(0) scaleY(1);
+}
+
+.duvida-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.duvida,
+.duvida2,
+.duvida3,
+.duvida4 {
+  position: relative;
+  background: rgb(42, 65, 92);
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  transform: translateY(-95%) scale(0);
+  transition: 1s;
+  font-size: 14px;
+}
+
+.form {
+  background-color: #e0e0e0;
+  width: 100vw;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  
+}
+
+.containerform {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: fit-content;
+  width: 80%;
+  left: -90px;
+  
+}
+
+.form-box {
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  position: relative;
+  width: 400px;
+  height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  margin: 15px 0;
+}
+
+.inputbox {
+  position: relative;
+  margin: 30px 0;
+  width: 310px;
+  border-bottom: 2px solid black;
+}
+
+.inputbox label {
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: black;
+  font-size: 1em;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+input:focus ~ label,
+input:valid ~ label {
+  top: -5px;
+}
+
+.inputbox .campo {
+  width: 100%;
+  height: 50px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  padding: 0 35px 0 5px;
+  color: black;
+}
+
+.inputboxRadio input {
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+
+.inputboxSelect select {
+  padding: 2px;
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+.inputboxCheck,
+.inputboxSelect {
+  margin-bottom: 20px;
+}
+
+.inputboxCheck input {
+  margin-top: 10px;
+}
+
+button {
+  width: 100%;
+  height: 40px;
+  border-radius: 40px;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.form img {
+  width: 750px;
+  height: 750px;
+}
+.rodape {
+  display: flex;
+  width: 100vw;
+  background-color: #aa8443;
+  justify-content: space-around;
+  font-family: "Raleway", sans-serif;
+}
+
+.qsomos {
+  padding-top: 20px;
+}
+
+.contatos {
+  padding-top: 20px;
+}
+
+.redesocial {
+  position: relative;
+  height: 100%;
+  width: 20%;
+  font-family: "Raleway", sans-serif;
+  padding-top: 20px;
+}
+
+.redesocial p {
+  padding-top: 0px;
+}
+
+.local {
+  padding-top: 20px;
+}
+
+.texto {
+  padding-top: 10px;
+  font-size: 15px;
+  height: 30%;
+  width: 300px;
+}
+
+.creditos {
+  background-color: #1d2f44;
+  width: 100vw;
+  height: fit-content;
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+
+}
